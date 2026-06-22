@@ -45,7 +45,7 @@ Changing the Ruff linter and formatter default setting is currently not supporte
 
 ### Setting up the debugger for debugging python
 
-For v0.0.7 debugger should be automatically configured. You typically don't need to do this unles for advanced troubleshooting.
+For v0.0.7 debugger should be automatically configured. You typically don't need to do this unless for advanced troubleshooting.
 
 ![Setting up the debugger for debuggying python](assets/nosi_debugger_setup.gif)
 
@@ -54,7 +54,7 @@ For v0.0.7 debugger should be automatically configured. You typically don't need
 
 ### git extension support
 
-Both inline and split fig diff view work
+Both inline and split git diff view work
 
 ![inline git diff view](assets/git_diff.gif)
 
