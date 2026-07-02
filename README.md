@@ -4,10 +4,11 @@ Nosi is a fork of VS Code. It is an anti-cheating IDE. Its goal is to improve co
  * Logging: Used to validate potential violations by analyzing the process of creation, not just the final result.
 In the long term, Nosi will evolve into an interactive, AI-powered IDE that can detect learning difficulties and provide real-time pedagogical support. Link to [paper](https://doi.org/10.1145/3774398.3811574)
 
-
 ## Nosi instructor-side analysis dashboard
 All edit logs for student submissions can be viewed in an instructor-side dashboard. The dashboard visualizes the students' coding process and extracts metrics from it. You can read more about it [here](https://github.com/Nosi-Inc/Nosi-legacy-dashboard-localbuild#nosi-dashboard-demo-live-demo-link).
 
+## Nosi introduction and overview
+[![Watch the vdeo](https://img.youtube.com/vi/gBhq2nH-JMs/maxresdefault.jpg)](https://www.youtube.com/watch?v=gBhq2nH-JMs)
 
 ## Nosi features and common operations
 Below are key features the latest Nosi v0.0.7 supports. Please use it as a reference for your regular coding workflow.
