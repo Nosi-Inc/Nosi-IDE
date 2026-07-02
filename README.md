@@ -1,5 +1,5 @@
 # Nosi-IDE
-Nosi is a fork of VS Code. It is an anti-cheating IDE. Its goal is to improve coding education, especially addressing the challenges posed by Large Language Models (LLMs). Nosi is designed to edit and run the encrypted homework templates files distributed to students. It logs interaction data during the coding/editing process. In the short term, these behavioral data are used to ensure students are producing their own work in accordance with academic integrity policies. Specifically:
+Nosi is a fork of VS Code. It is an anti-cheating IDE. Its goal is to improve coding education, especially addressing the challenges posed by Large Language Models (LLMs). Nosi is designed to edit and run the encrypted homework template files distributed to students. It logs interaction data during the coding/editing process. In the short term, these behavioral data are used to ensure students are producing their own work in accordance with academic integrity policies. Specifically:
  * Encryption: Designed to add “friction” to prevent the direct use of LLMs to solve assignments.
  * Logging: Used to validate potential violations by analyzing the process of creation, not just the final result.
 In the long term, Nosi will evolve into an interactive, AI-powered IDE that can detect learning difficulties and provide real-time pedagogical support. Link to [paper](https://doi.org/10.1145/3774398.3811574)
@@ -12,26 +12,26 @@ All edit logs for student submissions can be viewed in an instructor-side dashbo
 ## Nosi features and common operations
 Below are key features the latest Nosi v0.0.7 supports. Please use it as a reference for your regular coding workflow.
 
-### Opening and removing assignment folder in workspace
+### Opening and removing the assignment folder in the workspace
 ![opening and removing folder in workspace](assets/opening_removing_assignment_folder_in_workspace.gif)
 
-### Verifying and selecting environment from the lower right
+### Verifying and selecting the environment from the lower right
 ![checking and and selecting environment from the lower right corner](assets/select_env_from_lower_right.gif)
 
-### Running encrypted python files
+### Running encrypted Python files
 ![running encrypted python files](assets/running_encrypted_python_files.gif)
 
-### Running encrypted Python Interactive Window
+### Running an encrypted Python Interactive Window
 ![running encrypted Python Interactive Window](assets/interactive_window_tutorial.gif)
 
-### Installing extensions and changing theme
+### Installing extensions and changing the theme
 ![Install extentions and change theme](assets/install_extensions_and_change_theme.gif)
 
 ### Syntax Error highlighting
 ![Syntax error highlighting](assets/sytax_error_highlighting.gif)
 
 ### Search/replace by highlighting, then ctrl+f/ctrl+h (option+cmd+h for Mac OS), and redo by ctrl+z
-Note: don't highlight, ctrl+c and then ctrl+v into the search box as it will paste as encrypted text. Just highlight the text, and ctrl+f for search and ctrl+h for replace.
+Note: don't highlight, ctrl+c, and then ctrl+v into the search box, as it will paste as encrypted text. Just highlight the text, and Ctrl+F for search and Ctrl+H for replace.
 ![search replace redo](assets/search_replace_redo.gif)
 
 ### Ruff setup and file formatting
@@ -48,37 +48,37 @@ Changing the Ruff linter and formatter default setting is currently not supporte
 ### Hover window and auto fix (via ruff)
 ![Hover window and auto fix](assets/hover_window_and_auto_fix.gif)
 
-### Setting up the debugger for debugging python
+### Setting up the debugger for debugging Python
 
-For v0.0.7 debugger should be automatically configured. You typically don't need to do this unless for advanced troubleshooting.
+For v0.0.7, the debugger should be automatically configured. You typically don't need to do this unless for advanced troubleshooting.
 
 ![Setting up the debugger for debuggying python](assets/nosi_debugger_setup.gif)
 
-### Debug encrypted python files
+### Debug encrypted Python files
 ![Debug encrypted python files](assets/debug_encrypted_python_file.gif)
 
 ### git extension support
 
-Both inline and split git diff view work
+Both inline and split git diff views work
 
 ![inline git diff view](assets/git_diff.gif)
 
-### Using the denosifier to decrypt assignment
+### Using the denosifier to decrypt the assignment
 
 Each assignment has a different decryption key. The decryption key will be provided after the deadline.
 
 ![inline git diff view](assets/denosifier.gif)
 
-## Current state of Nosi, Pitfalls and Workarounds
+## Current state of Nosi, Pitfalls, and Workarounds
 
 ### Nosi troubleshooting steps:
-1. Always do a sanity check on the environemnt. Activate your environment first `conda activate env_name` run `which python` and `python --version` to verify that in the environment, the python path is what you expect to be. Also run which pip to see if the pip and python are actually from the same environment. If they are, you can install using `pip install -r requirements.txt`. If they are not, but the python path is expected, use `python -m pip install -r requirements.txt`. If even the python path by default is not what you expect and you are sure you activated that environment correctly, then it means you have some weird misconfiguration. For example conda environment does not load in your bash/powershell profile, or you have an environment variable overriding the path set by conda. You need to get that misconfiguration sorted out. Just to get things running fast, you can install the environment by `/full/path/to/python -m pip install -r requirements.txt`.
+1. Always do a sanity check on the environment. Activate your environment first `conda activate env_name` run `which python` and `python --version` to verify that in the environment, the python path is what you expect to be. Also run which pip to see if the pip and python are actually from the same environment. If they are, you can install using `pip install -r requirements.txt`. If they are not, but the python path is expected, use `python -m pip install -r requirements.txt`. If even the python path by default is not what you expect and you are sure you activated that environment correctly, then it means you have some weird misconfiguration. For example conda environment does not load in your bash/powershell profile, or you have an environment variable overriding the path set by conda. You need to get that misconfiguration sorted out. Just to get things running fast, you can install the environment by `/full/path/to/python -m pip install -r requirements.txt`.
 
-1. Verify libraries in the `requirements.txt` are all installed by running `python -m pip list`. Use full path to python if needed.
+1. Verify libraries in the `requirements.txt` are all installed by running `python -m pip list`. Use the full Python path if needed.
 
 1. When reinstalling Nosi, please make sure you delete the cache folder. (See more info about the cache folder below, under the reinstalling section)
 
-1. In Nosi, make sure you selected the correct environment before running the code. Look at the lower right corner and it should say the python version and the name of  your environment. For Jupyter or interactive window, it should be at the upper right.  If Nosi does not detect your newly installed environment, restart and try again.
+1. In Nosi, make sure you select the correct environment before running the code. Look at the lower right corner, and it should say the Python version and the name of your environment. For Jupyter or an interactive window, it should be at the upper right.  If Nosi does not detect your newly installed environment, restart and try again.
 
 1. Sometimes, rebooting computing entirely also helps.
 
