@@ -1,8 +1,11 @@
-# Nosi
+# Nosi-IDE
 Nosi is a fork of VS Code. It is an anti-cheating and AI powered IDE. Its goal is to improve coding education, especially addressing the challenges posed by Large Language Models (LLMs). Nosi is designed to edit and run the encrypted homework templates files distributed to students. It logs interaction data during the coding/editing process. In the short term, these behavioral data are used to ensure students are producing their own work in accordance with academic integrity policies. Specifically:
  * Encryption: Designed to add “friction” to prevent the direct use of LLMs to solve assignments.
  * Logging: Used to validate potential violations by analyzing the process of creation, not just the final result.
 In the long term, Nosi will evolve into an interactive, AI-powered IDE that can detect learning difficulties and provide real-time pedagogical support.
+
+## Nosi instructor-side analysis dashboard
+All edit logs for student submissions can be viewed in an instructor-side dashboard. The dashboard visualizes the students' coding process and extracts metrics from it. You can see it in action [here](https://nosi-inc.github.io/Nosi-legacy-dashboard-localbuild/?demo=true).
 
 ## Nosi features and common operations
 Below are key features the latest Nosi v0.0.7 supports. Please use it as a reference for your regular coding workflow.
