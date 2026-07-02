@@ -6,13 +6,8 @@ In the long term, Nosi will evolve into an interactive, AI-powered IDE that can 
 
 
 ## Nosi instructor-side analysis dashboard
-All edit logs for student submissions can be viewed in an instructor-side dashboard. The dashboard visualizes the students' coding process and extracts metrics from it. You can read more about it [here](https://github.com/Nosi-Inc/Nosi-legacy-dashboard-localbuild#nosi-dashbaord-overview).
+All edit logs for student submissions can be viewed in an instructor-side dashboard. The dashboard visualizes the students' coding process and extracts metrics from it. You can read more about it [here](https://github.com/Nosi-Inc/Nosi-legacy-dashboard-localbuild#nosi-dashboard-1).
 
-Click the image to try a live demo!
-
-[![Nosi dashboard screenshot](assets/nosi_dashboard.png)](https://nosi-inc.github.io/Nosi-legacy-dashboard-localbuild/?demo=true)
-
-Click the image to try a live demo!
 
 ## Nosi features and common operations
 Below are key features the latest Nosi v0.0.7 supports. Please use it as a reference for your regular coding workflow.
